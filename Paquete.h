@@ -1,3 +1,6 @@
+//Ángel David Candelario Rolon
+//A01712387
+
 #ifndef DISTANCIAS_H
 #define DISTANCIAS_H
 
