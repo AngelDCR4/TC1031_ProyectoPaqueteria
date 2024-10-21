@@ -48,7 +48,7 @@ En esta etapa del proyecto se desarrollarón mejoras importantes en la estructur
 >
 >Visualizar distancias ordenadas de menor a mayor
 >
->Seleccionar opción 4 (Hacer arbol e imprimir in-order)
+>Seleccionar opción 4 (Hacer arbol e imprimir inorder)
 >
 >Visualizar arbol ordenado de menor a mayor
 >
@@ -84,17 +84,23 @@ Peor caso -> O(n log n) incluso si la cantidad de datos estan desordenados el al
 
 La razón de que el algoritmo de Merge Sort mantenga la misma complejidad en todos los casos es porque se sigue la misma estructura recursiva de dividir el arreglo en mitades y combinar las mitades ordenadas sin importar la cantidad de datos
 
-Implementación del Selection Sort: Implemente el algoritmo de Selection Sort en la función "selectionsort(vector<float>& vec)". Este algoritmo tiene una complejidad de O(n^2), ya que en cada iteración del bucle se recorre la lista para encontrar el valor mínimo a intercambiar, lo que involucra dos bucles distintos pero enlazados.
+#### Implementación  del Arbol Binario
+El implementar un arbol binario implica tener:
 
-Arbol Binario
+Mejor caso -> O(log n) se esta considerando que el arbol esta balanceado, es decir el arbol tiene una cantidad de hijos similar de cada lado
+
+Caso promedio -> O(log n) se sigue considerando que el arbol esta balanceado 
+
+Peor caso -> O(n) aquí se esta considerando que el arbol esta desbalanceado, es decir no todos los nodos tienen hijos y la forma en que se insertan los nodos de una manera irregular
+
 ### SICT0302: Toma decisiones
 #### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
-Seleccione este algoritmo de ordenamient Select Sort debido a que el volumen de datos es bajo. El Selection Sort es adecuado para listas pequeñas o cuando se prefiere la simplicidad en el código. Elegi implementar el algoritmo de Selection Sort para ordenar las distancias de los paquetes respecto al origen (0,0) lo cual es apropiado en este contexto. El Selection Sort es fácil de entender y de implementar, por lo que resulta adecuado para casos donde no se esperan grandes volúmenes de datos.
+Elegí el merge Sort porque el algoritmo me permite ordenar las distancias de los paquetes debido a su alta eficiencia con la gran cantidad de datos que se pueden llegar a presentar a lo largo del desarrollo del proyecto. Su complejidad similar de O(n log n) en todos los casos se adecua a la situación que se esta manejando en mi proyecto y no a lo que se adecua a mi perpectiva. 
+
+De igual manera elegí implementar el Arbol binario para almacenar y organizar las distancias calculadas de los paquetes debido a que me permite insertar, buscar y ordenar los datos que se presenten. El caso promedio O(log n) me beneficia en tener las distancias ordenandas y visualizarlas en un recorrido inorder
 
 ### SICT0303: Implementa acciones científicas
+
 #### Implementa mecanismos para consultar información de las estructras correctos.
 
-#### Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta.
-
-
-
+Implemente mecanismos para consultar los datos de los paquetes, utilice el algoritmo de Merge Sort para ordenarlas los datos de la manera más eficiente de acuerdo a la cantidad de datos que se pueden llegar a presentar. Ademas la implementación del Árbol binario consulta la información almacenada y me ayuda a consultar la información teniendo un recorrido inorder permitiendo visualizar la información de menor a mayor. Estos mecanismos me ayudana a consultar la información de manera eficiente y ordenada.
