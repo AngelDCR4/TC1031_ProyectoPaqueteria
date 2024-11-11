@@ -47,6 +47,8 @@ Otros cambios pequeños que se realizarón dentro de este avance son:
 
 3 -  Se considerarón todos los nivel de complejidad de todos las estructuras de datos y de los metodos u operaciones.
 
+4 - Se actualizo el menú y se cambio el nombre de la opción 4 a "4 -> Ver distancias ordenadas segun el ABB (In-order)" y se agrego la opción de "5 -> Guardar pedidos en archivo (Generar txt)"
+
 ## Ejemplo de uso
 
 >PASO 1: Consultar archivo csv
