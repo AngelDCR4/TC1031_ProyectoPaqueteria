@@ -46,7 +46,6 @@ private:
     void imprimir_inorder(Nodo* nodo) const {
         if (nodo != NULL) {
             imprimir_inorder(nodo->izquierda);
-
             cout << fixed << setprecision(2) << nodo->valor << " -> ";
             imprimir_inorder(nodo->derecha);
         }
@@ -155,8 +154,8 @@ public:
     void mostrar_paquetes(vector<Paquete>& paquetes);
     void agregar_paquete(vector<Paquete>& paquetes);
     vector<float> calcdist(vector<Paquete>& paquetes);
-    void cargar_paquetes_desde_csv(vector<Paquete>& paquetes, const string& archivo_csv);
-    void guardar_en_archivo(vector<Paquete>& paquetes);
+    void cargar_csv(vector<Paquete>& paquetes, const string& archivo_csv);
+    void guardar_archivo(vector<Paquete>& paquetes);
 };
 
 //CONSTRUCTORES
@@ -169,8 +168,8 @@ string Paquete::get_nombreLugar() { return nomLug; }
 float Paquete::get_x() { return x; }
 float Paquete::get_y() { return y; }
 
-// Nueva función para cargar paquetes desde un archivo CSV
-void Paquete::cargar_paquetes_desde_csv(vector<Paquete>& paquetes, const string& archivo_csv) {
+//LEER ARCHIVO CSV
+void Paquete::cargar_csv(vector<Paquete>& paquetes, const string& archivo_csv) {
     ifstream archivo(archivo_csv.c_str());
     string linea;
     if (!archivo.is_open()) {
@@ -237,11 +236,11 @@ vector<float> Paquete::calcdist(vector<Paquete>& paquetes) {
 
 //PAQUETES POR DEFAULT
 void Paquete::ejemplos(vector<Paquete>& paquetes) {
-    cargar_paquetes_desde_csv(paquetes, "datos_paquetes.csv");
+    cargar_csv(paquetes, "datos_paquetes.csv");
 }
 
 //GUARDAR EN ARCHIVO
-void Paquete::guardar_en_archivo(vector<Paquete>& paquetes) {
+void Paquete::guardar_archivo(vector<Paquete>& paquetes) {
     ofstream archivo("paquetes_uhc.txt");
     if (archivo.is_open()) {
         for (int i = 0; i < paquetes.size(); i++) {
@@ -259,4 +258,3 @@ void Paquete::guardar_en_archivo(vector<Paquete>& paquetes) {
 }
 
 #endif
-
