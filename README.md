@@ -4,15 +4,19 @@ El proyecto consiste en un sistema de una empresa de paqueteria. El sistema es c
 ## Avance 1
 El proyecto puede desplegar un menu en el que el administrador del sistema pueda seleccionar algunas de las opciones presentadas:
 1 - Ver pedidos actuales
+
 Se desplegara en la terminal todos los pedidos mostrando su nombre, destino, coordenadas xy
 
 2 - Agregar pedidos
+
 Se solicitara al administrador ingresar el nombre del usuario que solicita la entrega del paquete, el lugar de destino y las coordenadas xy dentro del mapa
 
 3 - Ver distancias mas cortas
+
 Los paquetes que esten en el sistema continen coordenadas, se calcularan sus distancias y seran organizadas de menor a mayor para tener a la mano la mejor ruta posible para la entrega de los paquetes
 
 4 - Salir
+
 Salir del sistema y finalizar el programa
 
 ## Avance 2
