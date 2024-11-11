@@ -123,7 +123,7 @@ El vector de paquetes se encarga de almacenar la información (Nombre, Destino, 
 
 ####  `insertar_nodo`:
 
-Esta función inserta valores dentro del ABB siguiente las reglas de ordenamiento de un árbol binario de búsqueda y su nivel de complejidad en el caso promedio es de O(log n) cuando se trata de un árbol balanceado y en el peor caso es de O(n) ya que tendra que recorrer todos los nodos cuando el árbol este desbalanceado.
+Esta función inserta valores dentro del ABB siguiendo las reglas de ordenamiento de un árbol binario de búsqueda y su nivel de complejidad en el caso promedio es de O(log n) cuando se trata de un árbol balanceado y en el peor caso es de O(n) ya que tendra que recorrer todos los nodos cuando el árbol este desbalanceado.
 
 ####  `imprimir_inorder`
 
