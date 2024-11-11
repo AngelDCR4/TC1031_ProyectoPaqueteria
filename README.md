@@ -35,6 +35,14 @@ En esta etapa del proyecto se implementarón tres cambios fundamentales dentro d
 
 3 - Implementación de escritura de archivo txt: Se implemento la función de guardar y  escribir los datos en un archivo de texto. Esto con el proposito de tener una mejor consulta de la información guardada al momento de usar el programa. 
 
+Otros cambios pequeños que se realizarón dentro de este avance son:
+
+1 - La opción 3 de "Ver distancias mas cortas (Merge Sort)" ahora también despliega el número de paquete junto con su lugar de destino y la distancia correspondiente e imprime todos los paquetes con sus distancias de menor a mayor.
+
+2 - La opción 4 de "Ver distancias ordenadas segun el ABB (In-order)" ahora despliega información del proceso que se esta realizando para poder imprimir las distancias de menor a mayor. Esto con el proposito de tener un mejor entendimiento de que se esta realizando para el usuario final.
+
+3 -  Se considerarón todos los nivel de complejidad de todos las estructuras de datos y de los metodos u operaciones.
+
 ## Ejemplo de uso
 
 >PASO 1: Consultar archivo csv
